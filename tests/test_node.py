@@ -15,6 +15,11 @@ def test_should_have_property_called_next(node):
     assert hasattr(node, "next") is True
 
 
+def test_should_return_str_representaion_correctly():
+    node = Node("head node")
+    assert f"{node}" == "head node"
+
+
 def test_should_correctly_set_value_value_property(node):
     assert node.value == "head node"
 
